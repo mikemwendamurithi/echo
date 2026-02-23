@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoons for Teenagers & Kids</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f8fc;
+            color: #333;
+        }
+        header {
+            background: #ff7b00;
+            color: white;
+            text-align: center;
+            padding: 30px 10px;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: #ffe0c2;
+            padding: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #ff7b00;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #ff7b00;
+        }
+        footer {
+            text-align: center;
+            background: #ff7b00;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #ff7b00;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        .btn:hover {
+            background: #cc6300;
+        }
+    </style>
+</head>
+<body>
+
+<audio autoplay loop muted style="display: none;">
+    <source src="videos/animation.mp4.mp4" type="video/mp4">
+</audio>
+
+<script>
+    // Allow background audio to play
+    document.addEventListener('DOMContentLoaded', function() {
+        const audio = document.querySelector('audio');
+        audio.muted = false;
+        audio.play().catch(error => {
+            console.log('Autoplay prevented. Audio will play on user interaction.');
+        });
+    });
+</script>
+
+<header>Educative & Enjoyable Cartoons for Teenagers & Kids</header>
+
+<nav>
+    <a href="#popular">Popular</a>
+    <a href="#teenagers">Teenagers</a>
+    <a href="#kids">Kids</a>
+    <a href="#global">Worldwide 2025</a>
+</nav>
+
+<div class="container">
+
+    <div id="popular" class="section">
+        <h2>Most Popular Cartoons 2025</h2>
+        <p>These cartoons are trending globally for being both fun and educational:</p>
+        <ul>
+            <li><strong>Bluey</strong> – Teaches life lessons, creativity, and family values.</li>
+            <li><strong>Karma's World</strong> – Encourages confidence, talent, and kindness.</li>
+            <li><strong>Wild Kratts</strong> – Fun science and animal knowledge.</li>
+        </ul>
+    </div>
+
+    <div id="teenagers" class="section">
+        <h2>Best Cartoons for Teenagers</h2>
+        <p>Great for entertainment and developing positive character values:</p>
+        <ul>
+            <li><strong>The Dragon Prince</strong> – Friendship, teamwork, and leadership.</li>
+            <li><strong>Avatar: The Last Airbender</strong> – Wisdom, courage, and moral lessons.</li>
+            <li><strong>Hilda</strong> – Creativity, adventure, and problem solving.</li>
+        </ul>
+    </div>
+
+    <div id="kids" class="section">
+        <h2>Best Cartoons for Kids</h2>
+        <p>Simple, fun, and full of great values for young learners:</p>
+        <ul>
+            <li><strong>Peppa Pig</strong> – Family bonding and early life lessons.</li>
+            <li><strong>Super Simple Songs</strong> – Learning through music.</li>
+            <li><strong>Numberblocks</strong> – Early math made fun.</li>
+        </ul>
+    </div>
+
+    <div id="global" class="section">
+        <h2>Top Worldwide Cartoons (2025)</h2>
+        <p>Cartoons enjoyed by children and teens all around the world this year:</p>
+        <ul>
+            <li><strong>Bluey</strong> – Global favorite, educational and fun.</li>
+            <li><strong>Teen Titans Go!</strong> – Humor and creative storytelling.</li>
+            <li><strong>Masha and the Bear</strong> – Loved globally for humor and kindness lessons.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Featured Cartoon Video</h2>
+        <p>Watch this amazing animation:</p>
+        <video width="100%" height="400" controls style="border-radius: 8px;">
+            <source src="videos/animation.mp4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 Cartoons World – Educative & Enjoyable For All Ages
+</footer>
+
+</body><
+</html>
